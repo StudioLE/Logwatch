@@ -1,0 +1,43 @@
+{
+  "name": "logwatch",
+  "version": "0.0.1",
+  "description": "Create, install and preview Logwatch themes",
+  "keywords": [
+    "create",
+    "install",
+    "preview",
+    "logwatch",
+    "themes"
+  ],
+  "author": {
+    "name": "Laurence Elsdon",
+    "email": "hi@studiole.uk",
+    "url": "https://studiole.uk"
+  },
+  "homepage": "https://github.com/StudioLE/Logwatch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StudioLE/Logwatch"
+  },
+  "bugs": {
+    "url": "https://github.com/StudioLE/Logwatch/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.0",
+    "chalk": "^1.1.0",
+    "config": "^1.14.0",
+    "fs-extra": "^0.22.1",
+    "lodash": "^3.10.0",
+    "open": "0.0.5",
+    "terminal-menu": "^2.1.1"
+  },
+  "main": "lib/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/cli.js"
+  },
+  "bin": {
+    "node-logwatch": "./bin/cli"
+  }
+}

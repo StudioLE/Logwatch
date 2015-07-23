@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+process.env.NODE_CONFIG_DIR = require('path').join(__dirname, '../config')
+require('../lib/cli')
