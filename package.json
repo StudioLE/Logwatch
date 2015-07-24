@@ -30,7 +30,7 @@
     "fs-extra": "^0.22.1",
     "lodash": "^3.10.0",
     "open": "0.0.5",
-    "terminal-menu": "^2.1.1"
+    "sqwk": "^0.2.0-alpha"
   },
   "main": "lib/cli.js",
   "scripts": {
