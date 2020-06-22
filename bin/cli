@@ -1,2 +1,3 @@
 #!/usr/bin/env node
+require('dotenv').config({ path: '/usr/lib/node_modules/logwatch/.env' })
 require('../lib/cli')

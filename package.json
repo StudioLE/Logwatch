@@ -38,6 +38,6 @@
     "start": "node lib/cli.js"
   },
   "bin": {
-    "node-logwatch": "./bin/cli"
+    "theme-logwatch": "./bin/cli"
   }
 }
