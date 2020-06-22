@@ -13,20 +13,20 @@ Theme Logwatch provides two main functions.
 
 The application requires Node.js and npm to be installed, instructions can be found at [nodejs.org](http://nodejs.org/).
 
-With node installed run the following to install node-logwatch globally.
+With node installed run the following to install Theme Logwatch globally.
 
 ```
-npm install -g https://github.com/StudioLE/Logwatch.git
+npm install https://github.com/StudioLE/Logwatch.git theme-logwatch
 ```
 
 ## Configuration
 
-The application uses [node-config](https://github.com/lorenwest/node-config) so it's highly configurable. I recommend copying the `config/default.json` file to `config/local.json` and editing that so that your changes are not overwritten by future updates.
+The application uses [dotenv](https://www.npmjs.com/package/dotenv) for configuration. Simply make a copy of `.env.example` named `.env` and change the settings.
 
 ```
-cd /usr/lib/node_modules/logwatch
-cp config/default.json config/local.json
-nano config/local.json
+cd theme-logwatch
+cp .env.example .env
+nano .env
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ nano config/local.json
 The install a theme function will copy the header and footer files from the named sub-directory within `./themes` to the Logwatch theme location defined in the config file.
 
 ```
-node-logwatch install [THEME_NAME]
+node logwatch install [THEME_NAME]
 ```
 
 ### Create a theme
@@ -44,15 +44,15 @@ node-logwatch install [THEME_NAME]
 Creating a theme will simply copy the default theme files into a new sub-directory of themes for you to edit and then preview.
 
 ```
-node-logwatch create THEME_NAME
+node logwatch create [THEME_NAME]
 ```
 
 ### Preview a theme
 
-Previewing a theme will load a theme with some sample data in your browser.
+Preview a theme with sample data in your browser.
 
 ```
-node-logwatch preview [THEME_NAME]
+node logwatch preview
 ```
 
 ## References
