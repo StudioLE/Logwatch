@@ -32,6 +32,10 @@
     "open": "0.0.5",
     "sqwk": "^0.2.0-alpha"
   },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-plugin-node": "^11.1.0"
+  },
   "main": "lib/cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
